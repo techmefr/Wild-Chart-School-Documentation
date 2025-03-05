@@ -1,41 +1,102 @@
-# Website
+# Wild Chart School Documentation
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Site de documentation technique pour la librairie de visualisation de données Wild Chart School, construit avec Docusaurus.
 
-### Installation
+## 📋 Description
 
-```
-$ yarn
-```
+Ce projet héberge la documentation officielle de la librairie Wild Chart School, une solution open source de visualisation de données en JavaScript. La documentation est disponible en anglais et en français, et présente en détail l'installation, l'utilisation et la personnalisation de la librairie.
 
-### Local Development
+## ✨ Fonctionnalités
 
-```
-$ yarn start
-```
+- **Documentation bilingue** - Contenu disponible en anglais et français
+- **Exemples de code** - Illustrations complètes des différentes configurations
+- **Captures d'écran** - Visuels pour chaque type de graphique
+- **Design responsive** - Navigation optimisée sur tous les appareils
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## 🛠️ Technologies utilisées
 
-### Build
+- [Docusaurus 3](https://docusaurus.io/) - Générateur de sites statiques
+- React - Pour les composants personnalisés
+- Markdown - Pour la rédaction du contenu
+- MDX - Pour les composants interactifs dans la documentation
 
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
+## 🧩 Structure du projet
 
 ```
-$ USE_SSH=true yarn deploy
+wcs-docs/
+├── docs/                  # Documentation technique
+│   ├── English/           # Documentation en anglais
+│   └── Francais/          # Documentation en français
+├── src/                   # Code source React
+│   ├── components/        # Composants personnalisés
+│   ├── css/               # Styles personnalisés
+│   └── pages/             # Pages principales du site
+├── static/                # Ressources statiques (images, etc.)
+├── docusaurus.config.js   # Configuration de Docusaurus
+├── sidebars.js            # Configuration des barres latérales
+└── package.json           # Dépendances et scripts
 ```
 
-Not using SSH:
+## 💻 Installation
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
+1. Clonez ce dépôt
+```bash
+git clone git@github.com:WildCodeSchool-CDA-LYON-02-2024/wcs-docs.git
+cd wcs-docs
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+2. Installez les dépendances
+```bash
+yarn
+```
+
+3. Lancez le serveur de développement
+```bash
+yarn start
+```
+
+4. Ouvrez votre navigateur à l'adresse http://localhost:3000
+
+## 📝 Contenu de la documentation
+
+La documentation est organisée en deux langues et couvre :
+- Installation et démarrage rapide
+- Types de graphiques disponibles (barres, lignes, points, camemberts)
+- Options de configuration et personnalisation
+- Intégration de légendes
+- Exemples complets avec code et aperçu
+
+## 🚀 Déploiement
+
+Pour construire le site pour la production :
+
+```bash
+yarn build
+```
+
+Pour déployer le site (GitHub Pages) :
+
+```bash
+USE_SSH=true yarn deploy
+```
+
+## 🤝 Contribution
+
+Les contributions à la documentation sont les bienvenues. Pour contribuer :
+
+1. Créez une branche pour votre fonctionnalité
+2. Effectuez vos modifications
+3. Soumettez une pull request
+
+## 📖 Liens utiles
+
+- [Dépôt de la librairie Wild Chart School](https://github.com/WildCodeSchool-CDA-LYON-02-2024/wcs-chart-lib)
+- [Documentation Docusaurus](https://docusaurus.io/docs)
+
+## 📄 Licence
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+---
+
+Créé par [Gaëtan Compigni](https://github.com/techmefr) et l'équipe Wild Chart School
